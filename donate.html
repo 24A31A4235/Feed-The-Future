@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Now</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #56ab2f, #a8e063);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: 0.3s ease;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #56ab2f;
+      box-shadow: 0 0 6px rgba(86, 171, 47, 0.6);
+    }
+
+    textarea {
+      resize: none;
+      min-height: 80px;
+    }
+
+    button {
+      background: linear-gradient(135deg, #56ab2f, #3d8b40);
+      color: #fff;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #3d8b40, #2e7d32);
+      transform: scale(1.03);
+    }
+
+    /* Add a subtle footer message */
+    .note {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Donate Now</h2>
+    <form action="process_donation.php" method="POST">
+      <input type="text" name="company_name" placeholder="Company Name" required>
+      <input type="number" name="quantity" placeholder="Food Quantity (in kgs)" required>
+      <textarea name="address" placeholder="Company Address" required></textarea>
+      <input type="tel" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+      <button type="submit">Donate</button>
+    </form>
+    <p class="note">Your small donation can bring a big change ❤️</p>
+  </div>
+
+</body>
+</html>
