@@ -1,3 +1,7 @@
+🌐 Visit live: https://feed-the-future.whf.bz/
+
+Feed The Future is a food donation website that helps feed the poor. Every day restaurants are left with extra food — instead of wasting it, they share the food details and their address on this site. Our workers go to the restaurant, collect the food, and give it to people on the roadside who need it most. The site also lists subsidised government products at low prices.
+
 # 🍲 Feed The Future
 
 A food donation platform that connects restaurants with surplus food to people in need.
