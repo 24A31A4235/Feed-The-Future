@@ -36,11 +36,11 @@ CREATE TABLE IF NOT EXISTS cart (
     quantity INT NOT NULL DEFAULT 1
 );
 
--- Seed products shown on index.html (prices as displayed, Rs. 18.00 each)
+-- Seed products shown on index.html (prices as displayed: Wheat Rs. 50, Pulses Rs. 12, all others Rs. 18)
 INSERT INTO products (id, name, price, image) VALUES
 (1,  'Rice(10 kg)',            18.00, 'images/rice.png'),
-(2,  'Wheat / Atta (10 kg)',   18.00, 'images/wheat.png'),
-(3,  'Pulses (Dal, 1 kg)',     18.00, 'images/pulses.png'),
+(2,  'Wheat / Atta (10 kg)',   50.00, 'images/wheat.png'),
+(3,  'Pulses (Dal, 1 kg)',     12.00, 'images/pulses.png'),
 (4,  'Sugar (1 kg)',           18.00, 'images/sugar.png'),
 (5,  'Salt (Iodized, 1 kg)',   18.00, 'images/salt.png'),
 (6,  'Maize / Corn flour (1 kg)', 18.00, 'images/maize.png'),
